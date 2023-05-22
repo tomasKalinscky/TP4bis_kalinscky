@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a CountryPedia</h1>
+    <h2>Donde encontraras toda la informacion sobre paises que buscas</h2>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@foreach (Pais paisRecorrido in ViewBag.ListaPaises)
+{
+    <a href='@Url.Action("DetallePais", new {Pais = ViewBag.PaisRecorrido.Nombre})'><img src="/fotos/@paisRecorrido.imgBandera"></a>
+}

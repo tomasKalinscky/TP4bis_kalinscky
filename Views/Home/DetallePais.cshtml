@@ -1,0 +1,15 @@
+<p>Volver a <a href="index.cshtml">inicio</a></p>
+
+@{
+ViewData["Title"] = "DetallePais";
+}
+<img id="pantallaMuestra" src="/fotos/@ViewBag.Pais.imgBandera">
+<h1>Informacion sobre @ViewBag.Pais.Nombre</h1>
+<div>
+<p>Poblacion: @ViewBag.Pais.Poblacion habitantes</p>
+<p>Fecha en la que se independizó: @ViewBag.Pais.FechaIndependencia.Day/@ViewBag.Pais.FechaIndependencia.Month/@ViewBag.Pais.FechaIndependencia.Year</p>
+<P>Atractivos turisticos: @ViewBag.Pais.AtractivosTuristicos</P>
+
+</div>
+
+
